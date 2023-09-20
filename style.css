@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background: #0f0c29;
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  font-weight: 800;
+}
+
+.container {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 500px;
+  height: 500px;
+}
+.container h1 {
+  margin-bottom: 30px;
+  color: white;
+  text-align: center;
+}
+
+.container h1 span {
+  color: rgb(6, 249, 2);
+}
+
+#textbox {
+  width: 100%;
+  height: 250px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: medium;
+  outline: none;
+  resize: none;
+  margin-bottom: 30px;
+  box-shadow: 2px 3px 8px;
+}
+
+.voice {
+  display: flex;
+  gap: 10px;
+  width: 600;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+select {
+  width: 80%;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  height: 30px;
+  box-shadow: 2px 3px 5px;
+  padding-left: 10px;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  border: none;
+  border-radius: 20px;
+  font-size: medium;
+  box-shadow: 2px 3px 5px;
+  font-weight: 700;
+  cursor: pointer;
+  color: rgb(3, 3, 3);
+  background-color: green;
+}
+
+#icon {
+  font-size: medium;
+  margin-right: 3px;
+  color: white;
+}
+
+@media screen and (max-width: 425px) {
+  .container h1 {
+    font-size: x-large;
+  }
+  .container {
+    width: 350px;
+  }
+
+  .voice {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  select {
+    width: 320px;
+  }
+
+  button {
+    margin-top: 10px;
+    width: 100px;
+    height: 50px;
+    font-size: large;
+  }
+
+  #icon {
+    font-size: larger;
+  }
+}
